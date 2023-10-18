@@ -67,7 +67,7 @@ def _join_vods(playlist_path, target, overwrite, video):
         "-c", "copy",
         "-stats",
         "-loglevel", "warning",
-        "file:{}".format(target),
+        target,
     ]
 
     if overwrite:
