@@ -65,8 +65,6 @@ def _join_vods(playlist_path, target, overwrite, video):
         "ffmpeg",
         "-i", playlist_path,
         "-c", "copy",
-        "-stats",
-        "-loglevel", "warning",
         target,
     ]
 
