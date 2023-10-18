@@ -72,9 +72,8 @@ def _join_vods(playlist_path, target, overwrite, video):
         command.append("-y")
 
     print_out("<dim>{}</dim>".format(" ".join(command)))
-    result = subprocess.run(command)
-    if result.returncode != 0:
-        raise ConsoleError("Joining files failed")
+    result = " ".join(command)
+    os.system(result)
 
 
 def _video_target_filename(video, args):
